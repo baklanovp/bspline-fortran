@@ -27,7 +27,7 @@
         private
         integer(ip) :: inbvx = 1_ip  !! internal variable used by [[dbvalu]] for efficient processing
         integer(ip) :: iflag = 1_ip  !! saved `iflag` from the list routine call.
-        logical :: initialized = .false. !! true if the class is initialized and ready to use
+        logical, public :: initialized = .false. !! true if the class is initialized and ready to use
         logical :: extrap = .false. !! if true, then extrapolation is allowed during evaluation
     contains
         private
